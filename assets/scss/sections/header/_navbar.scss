@@ -1,0 +1,55 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.navbar {
+  flex-grow: 1;
+  justify-self: start;
+
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-grow: 1;
+    gap: $gap-lg;
+    list-style: none;
+
+
+    @include xl {
+      gap: $gap-lg;
+    }
+
+    @include lg {
+      gap: $gap-md;
+    }
+
+    @include sm {
+      gap: 10px;
+    }
+
+    @include xs {
+      gap: 5px;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    @include xl-min {
+      padding: $gap-sm;
+    }
+
+    @include xl {
+      padding: 7px;
+    }
+
+    @include lg {
+      padding: 5px;
+    }
+
+    @include xs {
+      padding: 2px;
+    }
+
+  }
+}
