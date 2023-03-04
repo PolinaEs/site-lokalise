@@ -16,20 +16,30 @@
 
 
     @include xl {
-      gap: $gap-lg;
+      gap: $gap-md;
+      justify-content: center;
+
     }
 
     @include lg {
-      gap: $gap-md;
+      gap: $gap;
     }
 
     @include sm {
       gap: 10px;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
     }
 
-    @include xs {
-      gap: 5px;
+    @include ux {
+      gap: 4px;
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
     }
+
+
   }
 
   &__link {
