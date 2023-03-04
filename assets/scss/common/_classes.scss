@@ -1,0 +1,37 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.container {
+  width: min(100% - $gap-xl, $container-width);
+  margin-inline: auto;
+}
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+
+
+  font-weight: 600;
+  font-size: 1rem;
+
+  &--light {
+    background-color: $color-white;
+    border-color: rgba($color-primary, 0.5);
+  }
+
+  &--accent {
+    color: $color-white;
+    background-color: $color-accent;
+    border-color: $color-accent;
+  }
+
+  &--sm {
+    min-width: 120px;
+    min-height: 45px;
+  }
+
+  &--md {
+    min-width: 160px;
+    min-height: 60px;
+  }
+}
