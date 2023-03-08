@@ -1,0 +1,131 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-content {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
+  row-gap: 20px;
+  margin-left: 44px;
+
+  @include xl-min {
+    padding-top: 126px;
+    padding-bottom: 160px;
+    grid-template-columns: 560px 1fr;
+  }
+
+  @include xl-lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    grid-template-columns: 52% 1fr;
+  }
+
+  @include lg {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    grid-template-areas: "ttl" "dsc" "img" "act" "nts";
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  @include sm {
+    grid-template-areas: "ttl" "dsc" "act" "nts";
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.08;
+    grid-area: ttl;
+
+
+    @include xl-min {
+      font-size: 65px;
+      text-align: left;
+    }
+
+    @include xl-lg {
+      font-size: 56px;
+      text-align: left;
+    }
+
+    @include lg {
+      max-width: 600px;
+      text-align: center;
+      font-size: 40px;
+    }
+  }
+
+  &__description {
+    padding-top: $gap-lg;
+    padding-bottom: $gap-lg;
+    line-height: 1.4;
+    grid-area: dsc;
+
+    @include xl-min {
+      font-size: 25px;
+      max-width: 470px;
+    }
+
+    @include xl {
+      max-width: 470px;
+      font-size: 20px;
+    }
+
+    @include lg {
+      max-width: 470px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    @include sm {
+      padding-top: $gap-sm;
+      padding-bottom: $gap-sm;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: $gap-sm;
+    grid-area: act;
+    margin-bottom: 9px;
+
+    @include sm {
+      flex-direction: column;
+      gap: $gap-sm;
+    }
+  }
+
+  &__notes {
+    grid-area: nts;
+
+    @include sm {
+      text-align: center;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: img;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &__image {
+    @include lg-min {
+      width: 100%;
+    }
+
+    @include lg {
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+}

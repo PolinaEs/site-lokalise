@@ -11,13 +11,15 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-grow: 1;
-    gap: $gap-lg;
+    padding: 0 21px;
+    gap: 38px;
     list-style: none;
+
 
 
     @include xl {
       gap: $gap-md;
-      justify-content: center;
+      justify-content: space-evenly;
 
     }
 
@@ -36,6 +38,7 @@
       gap: 4px;
       margin: 0;
       padding: 0;
+      text-align: center;
       flex-direction: column;
     }
 
@@ -44,6 +47,7 @@
 
   &__link {
     display: block;
+
 
     @include xl-min {
       padding: $gap-sm;
