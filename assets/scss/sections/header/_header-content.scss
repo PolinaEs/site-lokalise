@@ -9,6 +9,7 @@
   margin: 0 73px;
   margin-top: 2px;
 
+
   @include xl-min {
     padding-top: 126px;
     padding-bottom: 160px;
@@ -59,6 +60,14 @@
       max-width: 600px;
       text-align: center;
       font-size: 40px;
+    }
+
+    @include sm {
+      margin-top: 25px;
+    }
+
+    @include xs {
+      margin-top: 10px;
     }
   }
 

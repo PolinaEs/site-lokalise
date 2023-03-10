@@ -16,6 +16,8 @@ body {
   font-size: $font-size-inherit;
   overflow-wrap: break-word;
   background-color: $color-white;
+  overflow-x: hidden;
+  // width: 1440px;
 }
 
 a {
