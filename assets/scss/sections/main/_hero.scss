@@ -1,13 +1,13 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
-.header-content {
+.hero {
   display: grid;
   align-items: center;
   grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
   row-gap: 20px;
   margin: 0 73px;
-  margin-top: 2px;
+
 
 
   @include xl-min {
@@ -72,7 +72,7 @@
   }
 
   &__description {
-    padding-top: $gap-lg;
+    padding-top: 30px;
     padding-bottom: $gap-lg;
     line-height: 1.4;
     grid-area: dsc;

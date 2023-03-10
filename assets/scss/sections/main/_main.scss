@@ -1,0 +1,11 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.main {
+  position: relative;
+  background-color: $color-white;
+
+  @include sm {
+    top: 68px;
+  }
+}
