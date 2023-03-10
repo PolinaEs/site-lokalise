@@ -1,0 +1,46 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+// @use "features-mixin" as *;
+
+.control {
+  display: flex;
+  gap: 130px;
+  align-items: center;
+  margin-top: 50px;
+
+
+  &__content {
+    max-width: 493px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    // gap: 20px;
+  }
+
+  &__title {
+    margin-top: 35px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  &__description {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__btn {
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__picture {
+    padding-top: 40px;
+  }
+}
