@@ -2,12 +2,12 @@
 @use "../../mixins" as *;
 
 .hero {
+
   display: grid;
   align-items: center;
   grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
   row-gap: 20px;
   margin: 0 73px;
-
 
 
   @include xl-min {

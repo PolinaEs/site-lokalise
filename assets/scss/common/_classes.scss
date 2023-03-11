@@ -25,6 +25,12 @@
     border-color: $color-accent;
   }
 
+  &--black {
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
   &--sm {
     min-width: 120px;
     min-height: 45px;
@@ -32,6 +38,11 @@
 
   &--md {
     min-width: 160px;
+    min-height: 60px;
+  }
+
+  &--lg {
+    min-width: 193px;
     min-height: 60px;
   }
 }

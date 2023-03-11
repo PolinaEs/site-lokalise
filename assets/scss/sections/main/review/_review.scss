@@ -1,0 +1,13 @@
+@use "../../../mixins" as *;
+@use "../../../presets/" as *;
+
+.review {
+  background-color: $color-bg-secondary-1;
+  padding-top: 45px;
+  margin-top: 5px;
+  padding-bottom: 105px;
+
+  @include sm {
+    padding-bottom: 56px;
+  }
+}

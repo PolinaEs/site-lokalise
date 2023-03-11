@@ -5,7 +5,7 @@
 
 .quality {
   display: flex;
-  gap: 110px;
+  gap: 130px;
   align-items: center;
   margin-top: 205px;
 
@@ -28,11 +28,11 @@
 
 
   &__content {
-    max-width: 528px;
+    // max-width: 528px;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
-
+    max-width: 493px;
 
     @include xl {
       text-align: center;
@@ -87,7 +87,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    width: 518px;
+    // width: 518px;
 
 
     @include lg {

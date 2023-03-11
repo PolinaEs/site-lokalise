@@ -1,0 +1,14 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.localization {
+  padding-top: 67px;
+  padding-bottom: 160px;
+  text-align: center;
+  background-color: $color-bg-secondary-3;
+
+  @include lg {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

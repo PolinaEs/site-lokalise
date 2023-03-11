@@ -1,0 +1,13 @@
+@use "../../../presets/" as *;
+@use "../../../mixins" as *;
+
+.boost {
+  padding-top: 150px;
+  padding-bottom: 187px;
+
+  @include xl {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.facility-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 1px;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 1.39;
+    margin: 0;
+  }
+
+  &__picture {
+    order: -1;
+
+  }
+}

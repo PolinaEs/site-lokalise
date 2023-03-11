@@ -2,8 +2,10 @@
 @use "../../mixins" as *;
 
 .main {
-  position: relative;
+
   background-color: $color-white;
+  // max-width: 1440px;
+
 
   @include sm {
     top: 68px;

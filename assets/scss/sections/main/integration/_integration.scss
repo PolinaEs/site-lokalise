@@ -1,0 +1,19 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.integration {
+  padding-top: 120px;
+  padding-bottom: 160px;
+  text-align: center;
+
+  @include xl {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+}
