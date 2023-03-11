@@ -2,7 +2,7 @@
 @use "../../../mixins" as *;
 
 .facilities {
-  margin-top: 146px;
+  margin-top: 142px;
   padding-top: 120px;
   padding-bottom: 150px;
   background-color: $color-light;
@@ -30,13 +30,13 @@
 
   &__content {
     display: grid;
-    gap: 50px;
+    gap: 30px;
+
 
     @include xl-min {
       padding: 0 40px;
-
-      row-gap: 72px;
-      column-gap: 117px;
+      row-gap: 74px;
+      column-gap: 107px;
     }
 
     @include xl {

@@ -14,6 +14,7 @@
   }
 
   &__text {
+    max-width: 920px;
     grid-area: ttx;
     font-size: 30px;
     line-height: 1.33;
@@ -21,8 +22,29 @@
     padding-top: 18px;
     padding-bottom: 25px;
 
+    @include xl {
+      max-width: 650px;
+    }
+
+    @include lg {
+      max-width: 552px;
+    }
+
     @include sm {
       font-size: 22px;
+      max-width: 450px;
+    }
+
+    @include xs {
+      max-width: 350px;
+    }
+
+    @include xx {
+      max-width: 300px;
+    }
+
+    @include ux {
+      max-width: 245px;
     }
   }
 
@@ -62,5 +84,6 @@
   @include lg {
     grid-template-areas: "ttx" "img" "nam" "log";
     gap: $gap;
+    justify-content: center;
   }
 }

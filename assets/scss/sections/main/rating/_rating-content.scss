@@ -4,7 +4,8 @@
 .rating-content {
   display: flex;
   align-items: center;
-  gap: 70px;
+  column-gap: 69px;
+  justify-content: flex-end;
 
   @include xl {
     gap: 20px;
@@ -20,9 +21,15 @@
     display: flex;
     gap: 65px;
     align-items: center;
+    margin-right: 50px;
+
+    @include ul {
+      margin-right: 0;
+    }
 
     @include xl {
       gap: 20px;
+
     }
 
     @include lg {
@@ -46,17 +53,35 @@
 
 
     &-text {
+      max-width: 465px;
       font-weight: 600;
       font-size: 35px;
       line-height: 1.43;
       flex-basis: 461px;
 
-      @include sm {
-        flex-basis: 100px;
-      }
-
       @include lg {
         font-size: 28px;
+      }
+
+      @include md {
+        max-width: 450px;
+      }
+
+      @include sm {
+        flex-basis: 100px;
+        max-width: 515px;
+      }
+
+      @include xs {
+        max-width: 415px;
+      }
+
+      @include xx {
+        max-width: 290px;
+      }
+
+      @include ux {
+        max-width: 230px;
       }
     }
   }
@@ -77,6 +102,10 @@
     display: flex;
     gap: 70px;
     margin-right: 66px;
+
+    @include ul {
+      margin-right: 0;
+    }
 
     @include sm {
       gap: 30px;
