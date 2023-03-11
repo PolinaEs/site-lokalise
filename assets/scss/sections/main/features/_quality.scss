@@ -1,7 +1,7 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-// @use "features-mixin" as *;
+
 
 .quality {
   display: flex;
@@ -9,13 +9,52 @@
   align-items: center;
   margin-top: 205px;
 
+  @include xl {
+    gap: 100px;
+    margin-left: 20px;
+  }
+
+  @include lg {
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+  @include md {
+    gap: 45px;
+  }
+
 
   &__content {
     max-width: 528px;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
-    // gap: 20px;
+
+
+    @include xl {
+      text-align: center;
+      margin-right: 0;
+    }
+
+    @include sm {
+      max-width: 450px;
+    }
+
+    @include xs {
+      max-width: 390px;
+    }
+
+    @include xx {
+      max-width: 330px;
+    }
+
+    @include ux {
+      max-width: 300px;
+
+    }
   }
 
   &__title {
@@ -24,6 +63,23 @@
     font-weight: 600;
     font-size: 50px;
     line-height: 60px;
+
+    @include xl-lg {
+      font-size: 40px;
+    }
+
+    @include lg {
+      font-size: 31px;
+    }
+
+    @include sm {
+      line-height: 40px;
+    }
+
+    @include xx {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
   &__description {
@@ -32,6 +88,12 @@
     font-size: 20px;
     line-height: 30px;
     width: 518px;
+
+
+    @include lg {
+      width: auto;
+    }
+
   }
 
   &__btn {
@@ -43,5 +105,16 @@
 
   &__picture {
     padding-top: 40px;
+
+    @include lg {
+      padding-top: 0;
+    }
+  }
+
+  &__image {
+    @include md {
+      width: 90%;
+    }
+
   }
 }
