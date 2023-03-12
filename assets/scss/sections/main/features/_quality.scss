@@ -29,14 +29,15 @@
 
   &__content {
     // max-width: 528px;
-    margin-right: 30px;
+    // margin-right: 30px;
     display: flex;
     flex-direction: column;
-    max-width: 493px;
+    max-width: 540px;
 
     @include xl {
       text-align: center;
       margin-right: 0;
+      max-width: 493px;
     }
 
     @include sm {
@@ -112,6 +113,11 @@
   }
 
   &__image {
+
+    @include xl {
+      width: 100%;
+    }
+
     @include md {
       width: 90%;
     }

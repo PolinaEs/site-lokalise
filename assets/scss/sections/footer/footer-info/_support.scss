@@ -1,0 +1,41 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.support {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 15px;
+  grid-area: spt;
+  padding-left: 62px;
+
+  @include lg {
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 0;
+    padding-bottom: 5px;
+
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 246px;
+
+
+    @include xx {
+      max-width: 173px;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 1;
+  }
+}

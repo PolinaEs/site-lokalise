@@ -107,6 +107,11 @@
   }
 
   &__image {
+
+    @include xl {
+      width: 100%;
+    }
+
     @include md {
       width: 90%;
     }

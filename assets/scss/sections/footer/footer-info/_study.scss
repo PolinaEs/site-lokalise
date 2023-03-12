@@ -3,11 +3,29 @@
 
 .study {
 
+  display: flex;
+  flex-direction: column;
+
+  width: 290px;
+  grid-area: std;
+
+  @include md {
+    text-align: center;
+    align-items: center;
+
+    border: 1px solid $color-gray ;
+  }
+
+  @include xs {
+    margin: auto;
+  }
 
   &__title {
     margin: 0;
     font-size: 40px;
     line-height: 1.25;
+    padding-top: 3px;
+
   }
 
   &__image {
@@ -15,18 +33,31 @@
     height: 300px;
     margin-top: 28px;
     margin-bottom: 32px;
+
   }
 
   &__picture {
     height: auto;
     width: 100%;
     object-fit: contain;
+
+  }
+
+  &__logo {
+    width: fit-content;
+
+
+
   }
 
   &__description {
     font-size: 20px;
     line-height: 1.5;
     max-width: 300px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+
+
   }
 
   &__link {
