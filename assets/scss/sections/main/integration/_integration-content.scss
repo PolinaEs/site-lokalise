@@ -19,15 +19,22 @@
     @include xl {
       font-size: 50px;
       margin-bottom: 20px;
+      max-width: 560px;
+    }
+
+    @include lg {
+      max-width: 420px;
     }
 
     @include sm {
       font-size: 45px;
+      max-width: 400px;
     }
 
     @include xx {
       font-size: 30px;
       line-height: 40px;
+      max-width: 320px;
     }
   }
 
@@ -40,16 +47,17 @@
     line-height: 1.2;
 
     @include xl {
+      max-width: 560px;
       font-size: 20px;
-      max-width: 790px;
     }
 
     @include lg {
-      max-width: 850px;
+      max-width: 420px;
     }
 
     @include sm {
-      max-width: 450px;
+
+      max-width: 400px;
     }
 
     @include xs {

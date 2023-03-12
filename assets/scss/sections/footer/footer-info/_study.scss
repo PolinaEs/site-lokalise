@@ -57,7 +57,9 @@
     padding-top: 12px;
     padding-bottom: 15px;
 
-
+    @include xs {
+      max-width: 250px;
+    }
   }
 
   &__link {

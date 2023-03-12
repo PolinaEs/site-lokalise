@@ -23,6 +23,10 @@
     line-height: 1.39;
     margin: 0;
     max-width: 330px;
+
+    @include xs {
+      max-width: 300px;
+    }
   }
 
   &__picture {

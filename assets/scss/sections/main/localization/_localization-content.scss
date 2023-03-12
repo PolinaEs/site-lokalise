@@ -34,11 +34,28 @@
 
   &__description {
     padding-bottom: 53px;
-
+    max-width: 784px;
     text-align: center;
 
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+
+    @include xl-lg {
+      max-width: 560px;
+    }
+
+    @include lg {
+      max-width: 420px;
+    }
+
+    @include sm {
+
+      max-width: 400px;
+    }
+
+    @include xs {
+      max-width: 320px;
+    }
   }
 }
