@@ -6,6 +6,10 @@
   margin-inline: auto;
 }
 
+.visually-hidden {
+  @include visually-hidden;
+}
+
 .btn {
   border-width: 1px;
   border-style: solid;
